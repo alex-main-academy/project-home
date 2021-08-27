@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Project Home</title>
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
     
     <header class="header">
+        <div class="burger__menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
         <nav class="header__navbar">
             <div class="navbar__image">
                 <svg width="70" height="44" viewBox="0 0 70 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -43,7 +57,7 @@
             <div class="navbar__link">
                 <ul>
                     <div class="menu">
-                        <img src="./images/burger__menu.png" alt="">
+                        <img src="./images/burger__menu.png" alt="" class="menu__burger">
                     </div>
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Галерея</a></li>
@@ -82,7 +96,7 @@
 
     <section class="section">
 
-        <div class="content__1">
+        <div class="content__1 wow animate__animated animate__fadeInUp">
             <div class="image__1">
                 <div class="image__block__1">
                     <img src="images/content__image__1.jpg">
@@ -98,13 +112,15 @@
             </div>
             <div class="text">
                 <h2>О компании</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, porro quia nulla aliquid cumque, nobis, accusamus tenetur minus dignissimos magni sed. Corporis a consectetur harum repellendus at veritatis deleniti voluptas reiciendis quis ex facere, dolore quidem tempora eveniet, autem reprehenderit! Corrupti magnam consequuntur maiores aliquid, voluptatibus quos minima. Ea, vero! reiciendis quis ex facere, dolore quidem tempora eveniet, autem reprehenderit! Corrupti magnam consequuntur maiores aliquid, voluptatibus quos minima. Ea, vero! reiciendis quis ex facere, dolore quidem tempora eveniet, autem reprehenderit! Corrupti magnam consequuntur maiores aliquid, voluptatibus quos minima. Ea, vero!
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, porro quia nulla aliquid cumque, nobis, accusamus tenetur minus dignissimos magni sed. Corporis a consectetur harum repellendus at veritatis deleniti voluptas reiciendis quis ex facere, dolore quidem tempora eveniet, autem reprehenderit! Corrupti magnam consequuntur maiores 
                 </p>
-                <button>Читать --</button>
+                <p class="hidden">aliquid, voluptatibus quos minima. Ea, vero! reiciendis quis ex facere, dolore quidem tempora eveniet, autem reprehenderit! Corrupti magnam consequuntur maiores aliquid, voluptatibus quos minima. Ea, vero! reiciendis quis ex facere, dolore quidem tempora eveniet, autem reprehenderit! Corrupti magnam consequuntur maiores aliquid, voluptatibus quos minima. Ea, vero!
+                </p>
+                <button class="read">Читать --</button>
             </div>
         </div>
 
-        <div class="content__2">
+        <div class="content__2 wow animate__animated animate__fadeInUp" >
             <div class="content__title">
                 <h2>Основные задачи</h2>
             </div>
@@ -125,7 +141,7 @@
             </div>
         </div>
 
-        <div class="content__3">
+        <div class="content__3 wow animate__animated animate__fadeInUp">
             <div class="content__title">
                 <h2>Наши проекты</h2>
             </div>
@@ -155,7 +171,7 @@
             </div>
         </div>
 
-        <div class="content__4">
+        <div class="content__4 wow animate__animated animate__fadeInUp">
             <div class="content__title">
                 <h2>Связаться с нами</h2>
             </div>

@@ -1,17 +1,36 @@
 // compress:true;
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+
+    .burger__menu {
+        background-color: rgba(0, 0, 0, 0.575);
+        position: relative;
+        overflow: hidden;
+        display: none;
+        ul {
+            list-style: none;
+            text-align: center;
+            li {
+                margin: 10px 0 5px 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 
     .header__navbar {
-        padding: 1.5% 0;
+        padding: 1.5% 10%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -54,6 +73,12 @@
                         text-decoration: none;
                         color: black;
                         text-transform: uppercase;
+                        
+                        &:hover {
+                            transition: 500ms;
+                            border-bottom: 1px solid black;
+                            border-top: 1px solid black;
+                        }
                     }
                 }
             }
@@ -64,6 +89,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding: 0 10%;
 
         .info__text {
             width: 40%;
@@ -103,6 +129,11 @@
                         background: none;
                         border: 1px solid rgb(223, 223, 223);
                         padding: 12px 12px 7px 12px;
+                        &:hover {
+                            background-color: rgb(209, 209, 209);
+                            transition: all 1000ms ease-in-out;
+                            cursor: pointer;
+                        }
                         img {
                             width: 16px;
                         }
@@ -117,6 +148,11 @@
                         background: none;
                         border: 1px solid rgb(223, 223, 223);
                         padding: 12px 12px 7px 12px;
+                        &:hover {
+                            background-color: rgb(209, 209, 209);
+                            transition: all 1000ms ease-in-out;
+                            cursor: pointer;
+                        }
                         img {
                             width: 16px;
                         }
@@ -171,6 +207,12 @@
                     padding: 10px 20px;
                     top: -39px;
                 }
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.438);
+                    color: white;
+                    transition: all 500ms ease-in-out;
+                    cursor: pointer;
+                }
             }
         }   
     }
@@ -194,6 +236,11 @@
                 margin: 30px 0 0 20%;
                 img {
                     width: 100%;
+                    &:hover {
+                        opacity: 0.7;
+                        transition: all 1000ms ease-in-out;
+                        cursor: pointer;
+                    }
                 }
                 @media (max-width:769px) {
                     display: none;
@@ -205,6 +252,11 @@
                     width: 100%;
                     @media (max-width:769px) {
                         opacity: 0.3;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                        transition: all 1000ms ease-in-out;
+                        cursor: pointer;
                     }
                 }
                 @media (max-width:769px) {
@@ -221,6 +273,11 @@
                 margin: 0 0 0 30px;
                 img {
                     width: 100%;
+                    &:hover {
+                        opacity: 0.7;
+                        transition: all 1000ms ease-in-out;
+                        cursor: pointer;
+                    }
                 }
             }
             @media (max-width:769px) {
@@ -254,6 +311,9 @@
                 font-size: 16px;
                 line-height: 20px;
             }
+            .hidden {
+                display: none;
+            }
             button {
                 border: none;
                 border-radius: 0;
@@ -262,6 +322,12 @@
                 text-transform: uppercase;
                 font-size: 12px;
                 margin: 30px 0 0 0;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.281);
+                    color: white;
+                    transition: all 500ms ease-in-out;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -405,6 +471,11 @@
                     width: 49%;
                     img {
                         width: 100%;
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                            transition: all 1s ease-in-out;
+                        }
                     }
                     @media (max-width: 769px) {
                         width: 100%;
@@ -414,6 +485,11 @@
                     width: 49%;
                     img {
                         width: 100%;
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                            transition: all 1s ease-in-out;
+                        }
                     }
                     @media (max-width: 769px) {
                         width: 100%;
@@ -429,18 +505,33 @@
                     width: 31.5%;
                     img {
                         width: 100%;
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                            transition: all 1s ease-in-out;
+                        }
                     }
                 }
                 .middle__2 {
                     width: 31.5%;
                     img {
                         width: 100%;
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                            transition: all 1s ease-in-out;
+                        }
                     }
                 }
                 .middle__3 {
                     width: 31.5%;
                     img {
                         width: 100%;
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                            transition: all 1s ease-in-out;
+                        }
                     }
                 }
             }
@@ -460,6 +551,11 @@
                     @media (max-width: 415px) {
                         padding: 10px 20px;
                     }
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.603);
+                        cursor: pointer;
+                        transition: all 700ms ease-in-out;
+                    } 
                 }
             }
         }
@@ -542,6 +638,11 @@
                     @media (max-width: 415px) {
                         padding: 10px 20px;
                     }
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.603);
+                        cursor: pointer;
+                        transition: all 700ms ease-in-out;
+                    } 
                 }
             }
         }
